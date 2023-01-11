@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+<style>
+ @import url("https://fonts.googleapis.com/css?family=Poppins: wght@200; 400; 700&display=swap");
+
+.contrib-column {
+    padding: 15px 0;
+    text-align: center;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    font-size: 11px;
+}
+text.ContributionCalendar-label {
+    fill: white;
+    font-size: 11px;
+}
+ 
+    #try{
+        background-color: black;
+        border:1px solid black;
+        /* background-color: black; */
+        font-family:"Poppins", sans-serif ;
+
+        color:black
+    }
+  
+rect{
+    color: white;
+    transition: all 0.2s;
+    border-radius: 4000px;
+    width: 10px;
+    height: 10px;
+    /* see */
+    color: black;
+    
+  /* background: linear-gradient(90deg, red, orange, yellow, green, blue, purple); */
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+rect:hover{
+    /* fill:linear-gradient(90deg, red, orange, yellow, green, blue, purple); */
+    width:15px;
+    height: 15px;
+    border-radius: 100px;
+ 
+
+}
+rect.ContributionCalendar-day[data-level='0'] {
+    /* fill: var(--color-calendar-graph-day-bg); */
+    /* background-color: aqua; */
+}
+rect.ContributionCalendar-day[data-level='0'] :hover{
+    /* fill: var(--color-calendar-graph-day-bg); */
+    /* background-color: aqua; */
+    width: 500px;
+}
+rect.ContributionCalendar-day[data-level='1'] {
+    /* fill: var(--color-calendar-graph-day-bg);
+     */
+     /* fill:black */
+}
+rect.ContributionCalendar-day[data-level='2'] {
+    /* fill: var(--color-calendar-graph-day-bg); */
+}
+rect.ContributionCalendar-day[data-level='3'] {
+    /* fill: var(--color-calendar-graph-day-bg); */
+}
+rect.ContributionCalendar-day[data-level='4'] {
+    /* fill: var(--color-calendar-graph-day-bg); */
+}
+    #try span{
+    color:green;
+    background-color: black;
+    display: none;
+    color:black;
+    
+    }
+  
+    
+</style>
+
+
+</head>
+<body>
+    <div class="calendar" id="try">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+    </div>
+</body>
+</html>
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+    GitHubCalendar(".calendar", "shubhambhole99");
+    let span1=document.querySelectorAll('span');
+    for(let i=0;i<span1.length;i++){
+        span1[i].style.display='none';
+        console.log(span1[i])
+    }
+   
+    // or enable responsive functionality:
+//     GitHubCalendar(".calendar", "shubhambhole99", { responsive: true });
+// var username='shubhambhole99'
+//     // Use a proxy
+//     GitHubCalendar(".calendar", "shubhambhole99", {
+//        proxy (username) {
+//          return fetch(`https://your-proxy.com/github?user=${username}`)
+//        }
+//     }).then(r => r.text())
+</script>
