@@ -57,9 +57,14 @@ a:hover{
 #nav-menu{
     display: flex;
     justify-content: space-around;
-    gap: 25%;
-    height: 70px;
+    /* gap: 25%; */
+    /* height: 70px; */
     width:100%;
+    /* Sticky */
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 9px;
+  /* ends */
     /* margin-bottom: 20px; */
     background-color: rgb(0, 0, 0);
     color: azure;
@@ -234,23 +239,32 @@ cursor: pointer;
 
     grid-template-columns: repeat(4,1fr);
    column-gap: 0px;
-   row-gap: 5%;
+   /* row-gap: 5%; */
+}
+#ms>p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 /* #ms>div{
-    width:auto;
-    margin:auto;
-    border: 1px solid red;
-    border-radius: 300px;
-} */
-#ms>img{
-    width:50%;
+    width:60%;
+    height: 180%;
     border:3px solid rgb(81, 81, 81);
     border-radius: 60%;
     margin:auto;
-    
+    text-align: center;
+} */
+#ms>img{
+   
+    margin:auto;
+    /* margin-bottom: -15%; */
+    /* text-align: center; */
+    border-radius: 60%;
+    border:3px solid rgb(81, 81, 81);
     /* padding-bottom: 3%; */
 
-}
+ }
+ 
 
 /* projects section */
 #projects>h1{
@@ -391,9 +405,9 @@ rect.ContributionCalendar-day[data-level='4'] {
         </div>
         <div id="main">
             <p><a href="">Home</a></p>
-            <p><a href="">About Me</a></p>
-            <p><a href="">Skills</a></p>
-            <p><a href="#projects">Projects</a></p>
+            <p><a href="#cv">About Me</a></p>
+            <p><a href="#skillss">Skills</a></p>
+            <p><a href="#projectss">Projects</a></p>
             <p><a href="">Contact Me</a></p>
         </div>
         <!-- For Media Query And click -->
@@ -403,7 +417,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     
             </div> -->
             <div id="colmain">
-                <p>Home</p>
+            <p>Home</p>
             <p>About Me</p>
             <p>Skills</p>
             <p>Projects</p>
@@ -426,7 +440,8 @@ rect.ContributionCalendar-day[data-level='4'] {
 </div>
 <br>
 <br>
-<hr style="border:1px solid rgb(200, 200, 200); width: 80%;">
+<hr id="abouts" style="border:1px solid rgb(200, 200, 200); width: 80%;">
+
 <!-- About -->
 <div id="about" class="about section">
    
@@ -446,29 +461,53 @@ rect.ContributionCalendar-day[data-level='4'] {
       </p></div>
       <div id="iam">
         <img src="Yearbook-removebg-preview fin.png">
+        <div id="skillss"></div>
       </div>
+      
     </div>
 </div>
-<br>
+<!-- <br> -->
 
-<br>
+<!-- <br> -->
 
 
-    <hr style="border:1px solid #0b5b56; width: 80%;">
+<hr style="border:1px solid rgb(200, 200, 200); width: 80%; margin-top: 8%;">
 <!-- Skills Section -->
 <div id="skills">
     <h1>Skills</h1>
     <div id="ms">
-        <img src="java_white-removebg-preview.png">
-        <img src="Spring.png">
-        <img src="html.png">
-        <img src="java_white-removebg-preview.png">
-        <img src="java_white-removebg-preview.png">
-        <img src="java_white-removebg-preview.png">
+        <!-- <div><img style="width:50%;" src="java_white-removebg-preview.png"></div>
+        <div><img style="width:50%;" src="Spring.png"></div>
+        <div><img style="width:50%;" src="fihtml.png"></div>
+        <div><img style="width:30%;"src="PhoneLogo1.png"></div> -->
+        <img style="width:50%;" src="fihtml.png" >
+        <img style="width:30%; padding:10% 10% 10% 10%;" src="csslogofin.png">
+        <img style="width:50%;" src="js.png">
+        <img style="width:33%; padding:8% 8% 8% 8%;" src="javaf.png">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Javascript</p>
+        <p>Java</p>
+        <!-- Second Row -->
+        <img style="width:50%; "  src="spring.png">
+        <img style="width:50%;"  src="mysql.png">
+
+        <img style="width:40%" src="Githubf.png">
+        <img style="width:30%; padding:10% 10% 10% 10%;" src="vscodefin.png">
+
+        <p>Spring</p>
+        <p>MySQL</p>
+        <p>Github</p>
+        <p>Visual Studio</p>
+
+       
+        
 
         
     </div>
+   
 </div>
+<div id="projectss"></div>
 <!-- Projects -->
 <hr style="border:1px solid rgb(200, 200, 200); width: 80%; margin-top: 8%;">
     <div id="projects">
@@ -500,34 +539,9 @@ rect.ContributionCalendar-day[data-level='4'] {
             <a href="https://brilliant-swan-962410.netlify.app/index.html">Live</a>
             <a href="https://github.com/sbhole61299/Tmetric">Github</a>
             </div>
-            <div id="pc1">
-
-                <img src="UrbanCompany1.JPG">  
-                <p>Urban Company</p>
-                <a href="">HTML</a>
-                <a href="">CSS</a>
-                <a href="">JavaScript</a>
-                <p>Website designed for providing services like
-                    cleaning and grooming at your doorsteps. A
-                    collaborative group project built by a team of 5
-                    people.</p>
-                <a href="https://stupendous-raindrop-84d1d0.netlify.app/">Live</a>
-                <a href="https://github.com/sbhole61299/UrbanCompany">Github</a>
-            </div>
-                <div id="pc2">
-                    <img src="Tmetric12.jpg"> 
-                    <p>Tmetric</p>
-                <a href="">HTML</a>
-                <a href="">CSS</a>
-                <a href="">JavaScript</a>
-                    <p>Productivity and project management online
-                        software for tracking cost, time and quality.
-                        Executed as a solo project.</p>
-                <a href="https://brilliant-swan-962410.netlify.app/index.html">Live</a>
-                <a href="https://github.com/sbhole61299/Tmetric">Github</a>
-                </div>
+           
         </div>
-
+<div id="statss"></div>
     </div>
     <!-- projects ENd -->
     <hr style="border:1px solid rgb(200, 200, 200); width: 80%; margin-top: 8%;">
@@ -551,6 +565,16 @@ rect.ContributionCalendar-day[data-level='4'] {
             </p>      
            <br/>
    
+</div>
+<hr style="border:1px solid rgb(200, 200, 200); width: 80%; margin-top: 8%;">
+<div id="contact">
+    <h1>Contact Me</h1>
+    <div id="cf">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
 </div>
 </body>
 </html>
