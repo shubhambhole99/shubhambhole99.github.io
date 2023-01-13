@@ -27,17 +27,18 @@ body{
  
 }
 /* navbar */
-#nav-menu{
-    /* position: fixed; */
-   
-    /* margin-top: -5rem; */
-}
+
 #nav-menu{
     /* border: 1px solid rgb(4, 108, 108); */
+    border-bottom: 3px solid rgb(100, 100, 100);
+    /* border-radius: 20px; */
+    z-index: 1;
+
 }
 #nav-menu p{
     color: rgb(200, 200, 200);
     transition: all 0.2s ease-in 0s;
+    /* border-bottom: 1px solid azure; */
 }
 #nav-menu p:hover{
     color: rgb(255, 255, 255);
@@ -234,12 +235,35 @@ cursor: pointer;
 /* Home Section */
 #home{
    color:rgb(255, 255, 255);
-   margin-top:80px;
+   /* margin-top:10080px; */
+   /* first */
+   /* background:linear-gradient(to top,rgb(29, 29, 29) ,rgb(106, 106, 106)), url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"); */
+        /* background-blend-mode: normal; */
+        height: 800px;
+        /* height: 80%; */
+        /* position: relative;
+        background-size: 1800px;
+        padding: 20px;   */
+
+    /* second */
+    /* border: 1px solid red;*/
+background-image: url("final.jpg");
+  /* background-color: #000000; */
+   /* height: 700px; */
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;  
 }
-#home>p{
+#home>div{
+    /* border: 1px solid red; */
+    /* margin-bottom:-1000px; */
+}
+#home>div>p{
     color:rgb(255, 255, 255);
-    /* margin-top:100px; */
+    /* margin-bottom:100px; */
     margin-left: 8%;
+
     line-height: 4rem;
     font-size: 40px;
 }
@@ -288,15 +312,17 @@ cursor: pointer;
     /* text-align: justify; */
     /* text-justify: inter-word; */
 }
-#iam{
+
+#fam>img{
+    border-radius: 100px;
     margin-right: 7%;
     border-radius: 100px;
     border: 1px solid rgb(56, 56, 56);
-    /* background-color: rgb(198, 198, 198); */
-
 }
-#iam>img{
-    border-radius: 100px;
+@media only screen and (min-width:651px) and (max-width:1024px){
+#dam>p{
+    font-size: 12px;
+}
 }
 /* skills */
 #skills>h1{
@@ -338,29 +364,37 @@ cursor: pointer;
  
 
 /* projects section */
+#pf{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10%;
+    margin: auto;
+}
 #projects>h1{
    
     text-align: center;
 }
-#pf>#pc1>img{
-    width: 100%;
+#pf>img{
+    margin: auto;
+    width:80%;
     border:1px solid rgb(128, 128, 128);
     border-radius: 3% 3% 15% 15%;
+    /* height: 1200px; */
     box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
 
 }
 #pf>#pc2>img{
-    width: 100%;
+    width: 80%;
     border:0px solid rgb(122, 122, 122);
     box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
      border-radius: 3% 3% 15% 15%;
 }
-#pf{
+/* #pf{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* grid-template-rows: repeat(1,1fr); */
+    /* grid-template-rows: repeat(1,1fr); 
 
-}
+} */
 #pc1,#pc2{
     margin: auto;
     width: 80%;
@@ -388,6 +422,13 @@ cursor: pointer;
 #pf a:hover{
     border: 3px solid rgb(255, 254, 254);
     /* color: rgb(255, 255, 255); */
+}
+
+@media only screen and (min-width:651px) and (max-width:1024px){
+#pf{
+    font-size: 8px;
+}
+
 }
 /* github stats */
 .contrib-column {
@@ -477,12 +518,13 @@ rect.ContributionCalendar-day[data-level='4'] {
 #cf{
    
     display:grid;
+    height: 300px;
     margin:auto;
     /* border: 1px solid red; */
 
     grid-template-columns: repeat(3,1fr);
    /* column-gap: -20px; */
-   /* row-gap: 2%; */
+   row-gap: 4%;
 }
 #cf img{
    
@@ -500,12 +542,16 @@ rect.ContributionCalendar-day[data-level='4'] {
     padding: 5% 8% 5% 8%;
 }
 #cf>a:nth-child(2)>img{
-    width:22%;padding: 8% 8% 8% 8%;
+    width:22%;;
 }
 #cf>a:nth-child(3)>img{
     width:38%;
     /* padding: 20% 20% 20% 20%; */
 }
+#cf>p{
+    font-size: 30px;
+}
+
 /* Click to Copy */
 #one{
     margin-top:-2% ;
@@ -540,52 +586,77 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 }
 
-/* @media only screen and (min-width:651px) and (max-width:1024px){
-} */
+@media only screen and (min-width:651px) and (max-width:1024px){
+    #try{
+    display: none;
+    }
+    #cf>a:nth-child(1)>img{
+    width: 10%;
+    padding: 5% 8% 5% 8%;
+}
+#cf>a:nth-child(2)>img{
+    width:24%;
+}
+#cf>a:nth-child(3)>img{
+    width:28%;
+    /* padding: 20% 20% 20% 20%; */
+}
+#cf>p{
+    font-size: 15px;
+}
+#statss{
+    margin-top: 30px;
+}
+}
 
 
     </style>
 </head>
 <body>
 <!-- Navbar -->
-    <div id="nav-menu">
-        <div>
-            <h1 id="name">Shubham Bhole</h1>
-        </div>
-        <div id="main">
+    
+<div id="nav-menu">
+    <div>
+        <h1 id="name">Shubham Bhole</h1>
+    </div>
+    <div id="main">
+        <p><a href="">Home</a></p>
+        <p><a href="#cv">About Me</a></p>
+        <p><a href="#skillss">Skills</a></p>
+        <p><a href="#projectss">Projects</a></p>
+        <p><a href="">Contact Me</a></p>
+    </div>
+    <!-- For Media Query And click -->
+        <div id="colmain">
             <p><a href="">Home</a></p>
-            <p><a href="#cv">About Me</a></p>
+            <p><a onclick="ini()" href="#cv">About Me</a></p>
             <p><a href="#skillss">Skills</a></p>
             <p><a href="#projectss">Projects</a></p>
             <p><a href="">Contact Me</a></p>
         </div>
-        <!-- For Media Query And click -->
-            <div id="colmain">
-                <p><a href="">Home</a></p>
-                <p><a onclick="ini()" href="#cv">About Me</a></p>
-                <p><a href="#skillss">Skills</a></p>
-                <p><a href="#projectss">Projects</a></p>
-                <p><a href="">Contact Me</a></p>
-            </div>
 
-            <div id="ham">
-                <a><i style="color:azure; font-size: 30px;" class="fa-sharp fa-solid fa-bars"></i></a> 
-    
-            </div>
+        <div id="ham">
+            <a><i style="color:azure; font-size: 30px;" class="fa-sharp fa-solid fa-bars"></i></a> 
+
         </div>
-        <!-- ends -->
-       
     </div>
+       
+   
 
   
 <!-- Home -->
 <div id="home">
-<p>Hello,<br>I'm Shubham Bhole <br>A Java Full Stack Developer</p>
+<div>
+    <br><br><br><br><br>
+    <p>Hello,<br>I'm Shubham Bhole <br>A Java Backend Developer</p>
 <div id="cv">
     <p><a href="Shubham_Bhole_Resume.pdf" download="">Download CV</a></p></div>
 </div>
-<br>
-<br>
+</div>
+
+<!-- <img src="Logo Final\Done perf.png"> -->
+
+
 <hr id="abouts" style="border:1px solid rgb(200, 200, 200); width: 80%;">
 
 <!-- About -->
@@ -605,10 +676,9 @@ rect.ContributionCalendar-day[data-level='4'] {
         teams intact.
         
       </p></div>
-      <div id="iam">
         <img src="Yearbook-removebg-preview fin.png">
         <div id="skillss"></div>
-      </div>
+      
       
     </div>
 </div>
@@ -659,9 +729,8 @@ rect.ContributionCalendar-day[data-level='4'] {
     <div id="projects">
         <h1>Projects</h1>
         <div id="pf">
-            <div id="pc1">
-
             <img src="UrbanCompany1.JPG">  
+            <div id="pc1">
             <p>Urban Company</p>
             <a href="">HTML</a>
             <a href="">CSS</a>
@@ -674,7 +743,7 @@ rect.ContributionCalendar-day[data-level='4'] {
             <a href="https://github.com/sbhole61299/UrbanCompany">Github</a>
         </div>
             <div id="pc2">
-                <img src="Tmetric12.jpg"> 
+                
                 <p>Tmetric</p>
             <a href="">HTML</a>
             <a href="">CSS</a>
@@ -685,19 +754,23 @@ rect.ContributionCalendar-day[data-level='4'] {
             <a href="https://brilliant-swan-962410.netlify.app/index.html">Live</a>
             <a href="https://github.com/sbhole61299/Tmetric">Github</a>
             </div>
+            <img src="Tmetric12.jpg"> 
            
         </div>
 <div id="statss"></div>
     </div>
+    <br>
+    <br>
     <!-- projects ENd -->
-    <hr style="border:1px solid rgb(200, 200, 200); width: 80%; margin-top: 8%;">
+    <hr id="statline" style="border:1px solid rgb(200, 200, 200); width: 80%; margin-top: 8%;">
 
 <!-- My Github Stats -->
 <h1 style="text-align:center;">My Github Stats</h1>
 <div class="calendar" id="try">
-    <!-- Loading stuff -->
+     <!-- Loading stuff  -->
     Loading the data just for you.
 </div>
+<br>
 <div id="gs" style="margin-top: -4%;">
    
     <p style="text-align: center;">
@@ -709,22 +782,22 @@ rect.ContributionCalendar-day[data-level='4'] {
     <p style="text-align: center;">      
         <a href="https://github.com/shubhambhole99/github-readme-stats"><img alt="shubhambhole99 Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubhambhole99&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117" /></a>
             </p>      
-           <br/>
+           
    
 </div>
 <hr style="border:1px solid rgb(200, 200, 200); width: 80%; margin-top: 8%;">
 <div id="contact">
     <h1>Contact Me</h1>
     <div id="cf">
-        <a onclick="myFunction(`number`)" onmouseenter="hello(`one`)" onmouseleave="bye(`one`)" > <p id="one">Click to Copy</p><img src="PhoneLogo1.png" >
+        <a onclick="myFunction(`number`)" onmouseenter="hello(`one`)" onmouseleave="bye(`one`)" ><p id="one">Click to Copy</p><img src="PhoneLogo1.png" >
         </a>
         <a onclick="myFunction(`email`)" onmouseenter="hello(`two`)" onmouseleave="bye(`two`)"><p id="two">Click to Copy</p><img src="mail1f.png" >
         </a>
         <a onclick="myFunction(`lin`)" onmouseenter="hello(`three`)" onmouseleave="bye(`three`)"><p id="three">Click to Copy</p><img src="inff.png" >
         </a>
-        <a onclick="myFunction(`number`)" onmouseenter="hello(`one`)" onmouseleave="bye(`one`)" id="number">+91 9820282994</a>
-        <a onclick="myFunction(`email`)" onmouseenter="hello(`two`)" onmouseleave="bye(`two`)" id="email">shubhambhole68@gmail.com</a>
-        <a onclick="myFunction(`lin`)" onmouseenter="hello(`three`)" onmouseleave="bye(`three`)" id="lin">LinkedIn</a>
+        <p onclick="myFunction(`number`)" onmouseenter="hello(`one`)" onmouseleave="bye(`one`)" id="number">+91 9820282994</a>
+        <p onclick="myFunction(`email`)" onmouseenter="hello(`two`)" onmouseleave="bye(`two`)" id="email">shubhambhole68@gmail.com</a>
+        <p onclick="myFunction(`lin`)" onmouseenter="hello(`three`)" onmouseleave="bye(`three`)" id="lin">LinkedIn</a>
     </div>
 
 

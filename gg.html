@@ -25,6 +25,7 @@ text.ContributionCalendar-label {
 }
  
     #try{
+        width: 30%;
         background-color: black;
         border:1px solid black;
         /* background-color: black; */
@@ -53,6 +54,50 @@ rect:hover{
     border-radius: 100px;
  
 
+}
+@media only screen and (min-width:651px) and (max-width:1024px){
+    .contrib-column {
+    padding: 15px 0;
+    text-align: center;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    font-size: 5px;
+}
+text.ContributionCalendar-label {
+    fill: white;
+    font-size: 5px;
+}
+ 
+    #try{
+        background-color: black;
+        border:1px solid black;
+        /* background-color: black; */
+        font-family:"Poppins", sans-serif ;
+
+        color:black
+    }
+  
+rect{
+    color: white;
+    transition: all 0.2s;
+    border-radius: 4000px;
+    width: 5px;
+    height: 5px;
+    /* see */
+    color: black;
+    
+  /* background: linear-gradient(90deg, red, orange, yellow, green, blue, purple); */
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+rect:hover{
+    /* fill:linear-gradient(90deg, red, orange, yellow, green, blue, purple); */
+    width:15px;
+    height: 15px;
+    border-radius: 100px;
+ 
+
+}
 }
 rect.ContributionCalendar-day[data-level='0'] {
     /* fill: var(--color-calendar-graph-day-bg); */
