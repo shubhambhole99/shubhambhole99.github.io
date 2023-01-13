@@ -250,7 +250,7 @@ cursor: pointer;
 background-image: url("final.jpg");
   /* background-color: #000000; */
    /* height: 700px; */
-  background-position: center; 
+  background-position: right; 
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;  
@@ -289,7 +289,9 @@ background-image: url("final.jpg");
     cursor: pointer;
 }
 /* About Me */
-
+#about{
+    margin: auto;
+}
 #about>h1{
     color: azure;
     text-align:center;
@@ -297,14 +299,16 @@ background-image: url("final.jpg");
 #fam{
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
 #dam{
     margin-top: 3%;
     width:30%;
     line-height: 2.2rem;
     text-align: left;
+    /* margin: auto; */
     /* text-justify: auto; */
-    margin-left: 8%;
+    margin-left: 10%;
 }
 #dam>p{
     color: azure;
@@ -314,14 +318,20 @@ background-image: url("final.jpg");
 }
 
 #fam>img{
-    border-radius: 100px;
-    margin-right: 7%;
+    
+    margin-right: -7%;
     border-radius: 100px;
     border: 1px solid rgb(56, 56, 56);
 }
 @media only screen and (min-width:651px) and (max-width:1024px){
 #dam>p{
-    font-size: 12px;
+    font-size: 15px;
+}
+#fam>img{
+    
+   
+    height: 400px;
+
 }
 }
 /* skills */
@@ -542,7 +552,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     padding: 5% 8% 5% 8%;
 }
 #cf>a:nth-child(2)>img{
-    width:22%;;
+    width:35%;
 }
 #cf>a:nth-child(3)>img{
     width:38%;
@@ -592,7 +602,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     }
     #cf>a:nth-child(1)>img{
     width: 10%;
-    padding: 5% 8% 5% 8%;
+    padding: 6% 8% 6% 8%;
 }
 #cf>a:nth-child(2)>img{
     width:24%;
