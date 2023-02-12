@@ -632,6 +632,7 @@ rect.ContributionCalendar-day[data-level='4'] {
         <p><a href="#skillss">Skills</a></p>
         <p><a href="#projectss">Projects</a></p>
         <p><a href="#contactss">Contact Me</a></p>
+        <p><a onclick="reload()" href="Shubham_Bhole_Resume.pdf" download="">Resume</a></p>
     </div>
     <!-- For Media Query And click -->
         <div id="colmain">
@@ -640,6 +641,7 @@ rect.ContributionCalendar-day[data-level='4'] {
             <p><a onclick="ini()" href="#skillss">Skills</a></p>
             <p><a onclick="ini()" href="#projectss">Projects</a></p>
             <p><a onclick="ini()" href="#contactss">Contact Me</a></p>
+            <p><a onclick="reload()" href="Shubham_Bhole_Resume.pdf" download="">Resume</a></p>
         </div>
 
         <div id="ham">
@@ -657,7 +659,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     <br><br><br><br><br>
     <p>Hello,<br>I'm Shubham Bhole <br>A Java Backend Developer</p>
 <div id="cv">
-    <p><a href="Shubham_Bhole_Resume.pdf" download="">Download CV</a></p></div>
+    <p><a onclick="reload()" href="Shubham_Bhole_Resume.pdf" download="">Download CV</a></p></div>
     
 
 </div>
@@ -896,5 +898,15 @@ function hello(id){
 function bye(id){
     x=document.getElementById(id+"ho")
     x.setAttribute("id",id)
+}
+
+function reload(){
+   
+//    link="https://drive.google.com/drive/folders/1g0U9Q-U-OMjooXmG26EGZNVRCnV-6g_2"
+   window.open('https://drive.google.com/file/d/1yYYAZlUqVoNAhTUfC3xt4-WmE5Nauu5b/view?usp=share_link');
+ 
+//    var href = link.href;
+// 				window.open(href,"google.com");
+// 				document.location.reload(true)
 }
 </script>
