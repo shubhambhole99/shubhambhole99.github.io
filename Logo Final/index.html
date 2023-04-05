@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- For Hamburger -->
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+
+    <style>
+@import url("https://fonts.googleapis.com/css?family=Poppins: wght@200; 400; 700&display=swap");
+body{
+    background-color: rgb(0, 0, 0);
+    
+    font-family:"Poppins", sans-serif ;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-weight: bold;
+ 
+}
+/* navbar */
+#nav-menu{
+    /* position: fixed; */
+   
+    /* margin-top: -5rem; */
+}
+#nav-menu p{
+    color: rgb(200, 200, 200);
+    transition: all 0.2s ease-in 0s;
+}
+#nav-menu p:hover{
+    color: rgb(255, 255, 255);
+}
+a{
+    color:rgb(200, 200, 200); 
+    text-decoration: none;
+    transition: all 0.2s ease-in 0s;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+#nav-menu>div:nth-child(2)>p{
+    font-size: 20px;
+    font-weight: 600;
+}
+#nav-menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 25%;
+    height: 70px;
+    width:100%;
+    /* margin-bottom: 20px; */
+    background-color: rgb(0, 0, 0);
+    color: azure;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* border-radius: 0 0 10% 10%; */
+}
+#nav-menu>div>p{
+    margin-top: 3%;
+    margin-left: 5px;
+    color: azure;
+}
+#nav-menu>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    border: 0px solid rebeccapurple;
+    color: black;
+}
+#nav-menu>div>h1{
+    color: rgb(200, 200, 200);
+    /* border: 1px solid red; */
+   font-size: 30px;
+margin-top: 10px;
+margin-right: -20%;
+transition: all 1s ease-in 0s;
+/* transition: margin-left 1s ease-in 0s; */
+
+}
+#nav-menu>div>h1:hover{
+    font-size: 30.5px;
+    color: rgb(255, 255, 255);
+
+cursor: pointer;
+}
+#ham{
+    display: none;
+}
+
+@media only screen and (min-width:651px) and (max-width:1024px){
+ 
+#main>p{
+    display: none;
+}
+#ham{
+    display: inline;
+}
+#nav-menu>div>h1{
+    margin-left: 20px;
+    display: inline-block;
+    transition: all 0s ease-in 0s;
+    transition: color 1s ease-in 0s;
+    transition: font-size 1s ease-in;
+
+
+}
+
+}
+ 
+
+ @media only screen and (min-width:320px) and (max-width:650px){
+    #main>p{
+    display: none;
+}
+#ham{
+    display: inline;
+}
+#nav-menu>div>h1{
+    margin-left: 20px;
+}
+}
+/* Home Section */
+#home{
+   color:rgb(255, 255, 255);
+   margin-top:80px;
+}
+#home>p{
+    color:rgb(255, 255, 255);
+    /* margin-top:100px; */
+    margin-left: 8%;
+    line-height: 4rem;
+    font-size: 40px;
+}
+#cv{
+    background-color: rgb(41, 40, 40);
+    color: rgb(200, 200, 200);
+    width: 18%;
+    padding: 0.7%;
+    padding-bottom: 1%;
+    margin-left: 8%;
+    height: 50px;
+    border-radius:10px;
+   
+    text-align: center;
+
+}
+#cv>p{
+    transition: color 0.2s ease-in 0s;
+    color: rgb(200, 200, 200);
+}
+#cv>p:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+/* About Me */
+
+#about>h1{
+    color: azure;
+    text-align:center;
+}
+#fam{
+    display: flex;
+    justify-content: space-between;
+}
+#dam{
+    margin-top: 3%;
+    width:30%;
+    line-height: 2.2rem;
+    text-align: left;
+    text-justify: auto;
+    margin-left: 8%;
+}
+#dam>p{
+    color: azure;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#iam{
+    margin-right: 7%;
+    border-radius: 100px;
+    border: 1px solid rgb(56, 56, 56);
+    /* background-color: rgb(198, 198, 198); */
+
+}
+#iam>img{
+    border-radius: 100px;
+}
+/* skills */
+#skills>h1{
+    color: azure;
+    text-align:center;
+}
+#ms{
+    display:grid;
+    margin:auto;
+    /* border: 1px solid red; */
+
+    grid-template-columns: repeat(4,1fr);
+   column-gap: 0px;
+   row-gap: 5%;
+}
+/* #ms>div{
+    width:auto;
+    margin:auto;
+    border: 1px solid red;
+    border-radius: 300px;
+} */
+#ms>img{
+    width:50%;
+    border:3px solid rgb(81, 81, 81);;
+    border-radius: 60%;
+    margin:auto;
+    
+    /* padding-bottom: 3%; */
+
+}
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+    <div id="nav-menu">
+        <div>
+            <h1>Shubham Bhole</h1>
+        </div>
+        <div id="main">
+            <p><a href="">Home</a></p>
+            <p><a href="">About Me</a></p>
+            <p><a href="">Skills</a></p>
+            <p><a href="">Projects</a></p>
+            <p><a href="">Contact Me</a></p>
+        </div>
+        <div id="ham">
+            <a onclick="append()"><i style="color:white; font-size: 30px;" class="fa-sharp fa-solid fa-bars"></i></a> 
+
+        </div>
+       
+    </div>
+<!-- Home -->
+<div id="home">
+<p>Hello,<br>I'm Shubham Bhole <br>A Java Full Stack Developer</p>
+<div id="cv">
+    <p>Download CV</p></div>
+</div>
+<br>
+<br>
+<hr style="border:1px solid rgb(200, 200, 200); width: 80%;">
+<!-- About -->
+<div id="about" class="about section">
+   
+<h1>About Me</h1>
+<div id="fam">
+    <div id="dam">
+     <p>
+        A Java Full Stack Developer skilled at
+        developing and handling websites using
+        Java Backend plus Frontend Technologies
+        such as SpringBoot. Adept at articulating
+        queries and solutions, always ready to
+        deliver quality work by keeping
+        communication lines with and between
+        teams intact.
+        
+      </p></div>
+      <div id="iam">
+        <img src="Yearbook-removebg-preview fin.png">
+      </div>
+    </div>
+</div>
+<br>
+<br>
+<hr style="border:1px solid rgb(200, 200, 200); width: 80%;">
+<!-- Skills Section -->
+<div id="skills">
+    <h1>Skills</h1>
+    <div id="ms">
+        <img src="java_white-removebg-preview.png">
+        <img src="java_white-removebg-preview.png">
+        <img src="java_white-removebg-preview.png">
+        <img src="java_white-removebg-preview.png">
+        <img src="java_white-removebg-preview.png">
+        <img src="java_white-removebg-preview.png">
+
+        
+    </div>
+</div>
+
+
+
+    <!-- <i style="color:white;" class="fa-sharp fa-solid fa-bars"></i> -->
+</body>
+</html>
